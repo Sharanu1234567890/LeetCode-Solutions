@@ -1,2 +1,1 @@
-# LeetCode-Solutions
-Java code for partition array with max difference K
+#Daily Problem of the day LeetCode-Solutions

@@ -1,18 +1,12 @@
-// class Solution {
-//     public boolean isPowerOfFour(int n) {
-//         if(n>=1){
-//         if(n==1){
-//             return true;
-//         }
-        
-//         return n%4==0;
-//         }
-//         return false;
-//     }
-// }
-
 class Solution {
-    public boolean isPowerOfFour(int n) {
-        return n > 0 && (n & (n - 1)) == 0 && (n & 0x55555555) != 0;
+    public int maximum69Number (int num) {
+         char[] digits = String.valueOf(num).toCharArray();
+    for (int i = 0; i < digits.length; i++) {
+        if (digits[i] == '6') {
+            digits[i] = '9';
+            break;
+        }
     }
+    return Integer.parseInt(new String(digits));
 }
+    }
